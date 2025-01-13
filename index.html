@@ -4,37 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheet -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 
     <title>Biglietto Treno</title>
 </head>
 
 <body>
-    <div id="content">
 
+    <!-- title -->
+    <div>
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    </div>
 
-        <form id="train-ticket-form">
-            <label for="user-name">Nome e Cognome</label>
-            <input id="user-name" type="text" placeholder="Inserisci il tuo nome e cognome">
+    <!-- ticket input box -->
+    <div id="ticket-input-box">
+        <form id="ticket-input-form">
 
-            <label for="user-kilometers">Chilometri da percorrere</label>
-            <input id="user-kilometers" type="number" placeholder="Inserisci i chilometri da percorrere">
+            <div class="ticket-input-div">
+                <div class="ticket-input-label">
+                    <label class="label" for="user-name">Nome e Cognome</label>
+                    <input id="user-name" type="text" placeholder="Inserisci il tuo nome e cognome">
+                </div>
 
-            <label for="user-age">Età</label>
-            <input id="user-age" type="number" placeholder="Inserisci la tua età">
+                <div class="ticket-input-label">
+                    <label class="label" for="user-kilometers">Chilometri da percorrere</label>
+                    <input id="user-kilometers" type="number" placeholder="Inserisci i chilometri da percorrere">
+                </div>
 
-            <button id="calculate-button">Invia i tuoi dati</button>
+                <div class="ticket-input-label">
+                    <label class="label" for="user-age">Età</label>
+                    <input id="user-age" type="number" placeholder="Inserisci la tua età">
+                </div>
+            </div>
+
+            <div class="ticket-input-div">
+                <button id="calculate-button">Invia i tuoi dati</button>
+            </div>
+
         </form>
+    </div>
 
-        <div id="ticket-output">
-            <h2>Il tuo biglietto</h2>
-            <p>Il biglietto è per: <span id="user-name-output"></span></p>
-            <p>Devi percorrere: <span id="user-kilometers-output"></span></p>
-            <p>L'età dell'utente è: <span id="user-age-output"></span></p>
-            <p>Devi pagare: <span id="user-price-output"></span></p>
-        </div>
+    <!-- ticket output box -->
+    <div>
+        <h1>IL TUO BIGLIETTO</h1>
+    </div>
 
+    <div id="ticket-output-box">
+        <h2>Il tuo biglietto</h2>
+        <p>Il biglietto è per: <span id="user-name-output"></span></p>
+        <p>Devi percorrere: <span id="user-kilometers-output"></span></p>
+        <p>L'età dell'utente è: <span id="user-age-output"></span></p>
+        <p>Devi pagare: <span id="user-price-output"></span></p>
     </div>
 
     <script src="./js/script.js"></script>
