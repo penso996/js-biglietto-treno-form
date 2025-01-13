@@ -17,9 +17,9 @@ document.getElementById("calculate-button").addEventListener("click", function (
     ticketPrice = ticketPrice.toFixed(2);
 
     //OUTPUT
-    document.getElementById("user-name-output").innerHTML = "Il biglietto è per: " + userName;
-    document.getElementById("user-kilometers-output").innerHTML = "Devi percorrere: " + kilometers + " km";
-    document.getElementById("user-age-output").innerHTML = "L'età dell'utente è: " + age + " anni";
-    document.getElementById("user-price-output").innerHTML = "Devi pagare: € " + ticketPrice;
+    document.getElementById("user-name-output").textContent = userName;
+    document.getElementById("user-kilometers-output").textContent = kilometers + " km";
+    document.getElementById("user-age-output").textContent = age + " anni";
+    document.getElementById("user-price-output").textContent = "€ " + ticketPrice;
 
 });
