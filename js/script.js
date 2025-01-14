@@ -1,12 +1,14 @@
 document.getElementById("calculate-button").addEventListener("click", function (event) {
     event.preventDefault();
 
+    //INPUT DATI UTENTE DAL FORM
     const userName = document.getElementById("user-name").value.trim();
     const kilometers = document.getElementById("user-kilometers").value;
     const age = document.getElementById("user-age").value;
 
+    //CALCOLO DEL PREZZO
     const pricePerKm = 0.21;
-    let = ticketPrice = kilometers * pricePerKm;
+    let ticketPrice = kilometers * pricePerKm;
 
     if (age < 18) {
         ticketPrice = ticketPrice * 0.8;
